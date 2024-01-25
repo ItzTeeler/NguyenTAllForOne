@@ -1,0 +1,139 @@
+/* Fonts */
+@font-face {
+  font-family: Rubik-Bold;
+  src: url(../Fonts/Rubik/static/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: Rubik-Regular;
+  src: url(../Fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rubik-SemiBold;
+  src: url(../Fonts/Rubik/static/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Rubik-Medium;
+  src: url(../Fonts/Rubik/static/Rubik-Medium.ttf);
+}
+
+.backgroundHome {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+    url('../assets/landingbg.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.backgroundSayHello {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+    url('../assets/SayHello.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.backgroundAdd2Nums {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+    url('../assets/add2nums.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.backgroundAskingQuestiongs {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+    url('../assets/askingquestions.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.backgroundGreaterThanLessThan {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+    url('../assets/greaterthanorlessthan.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.backgroundMadLib {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+    url('../assets/madlib.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.backgroundReverseItNumbers {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+    url('../assets/ReverseIt\(Integers\).avif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
+.backgroundReverseItString {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
+    url('../assets/ReverseIt\(String\).png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+}
