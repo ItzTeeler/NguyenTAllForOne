@@ -4,8 +4,6 @@ let submit = document.getElementById("submit");
 let returnOutput = document.getElementById("returnOutput");
 
 submit.addEventListener("click", () =>{
-    console.log(num1.value);
-    console.log(num2.value);
     AddNumApi(num1.value, num2.value);
 });
 
