@@ -748,6 +748,18 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-52 {
+  padding: 13rem;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
 .px-\[1\.9375rem\] {
   padding-left: 1.9375rem;
   padding-right: 1.9375rem;
@@ -886,6 +898,10 @@ video {
 
   .lg\:justify-end {
     justify-content: flex-end;
+  }
+
+  .lg\:p-20 {
+    padding: 5rem;
   }
 
   .lg\:px-44 {
