@@ -30,7 +30,7 @@
         <div class="flex justify-center px-[1.9375rem]">
             <div
                 class="bg-white w-[77.5rem] min-h-[24.25rem] border-black rounded-[20px] border-[0.3125rem] flex justify-center items-center">
-                <p class="font-[Rubik-Bold] text-[1.875rem] lg:text-[4.375rem] text-center">A young {gender}, aged {age} named {name} sat down at a restaurant to enjoy a (n) {adjective1} {food} which was for some reason colored {color}. {pronoun} works at a {adjective2} {job} that made the workers eat a (n) {adjective1} {noun} ON THE JOB.</p>
+                <p class="font-[Rubik-Bold] text-[1.875rem] lg:text-[4.375rem] text-center" id="returnOutput">A young {gender}, aged {age} named {name} sat down at a restaurant to enjoy a (n) {adjective1} {food} which was for some reason colored {color}. {pronoun} works at a {adjective2} {job} that made the workers eat a (n) {adjective1} {noun} ON THE JOB.</p>
             </div>
         </div>
 
@@ -42,27 +42,27 @@
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Gender">
+                    type="text" placeholder="Gender" id="genderInput">
             </div>
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Name">
+                    type="text" placeholder="Name" id="nameInput">
             </div>
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Age">
+                    type="text" placeholder="Age" id="ageInput">
             </div>
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Color">
+                    type="text" placeholder="Color" id="colorInput">
             </div>
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Pronoun">
+                    type="text" placeholder="Pronoun" id="pronounInput">
             </div>
         </div>
 
@@ -70,33 +70,33 @@
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Food">
+                    type="text" placeholder="Food" id="foodInput">
             </div>
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Job">
+                    type="text" placeholder="Job" id="jobInput">
             </div>
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Adjective 1">
+                    type="text" placeholder="Adjective 1" id="adjective1Input">
             </div>
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Adjective 2">
+                    type="text" placeholder="Adjective 2" id="adjective2Input">
             </div>
             <div class="flex justify-center lg:justify-end col-span-5 lg:col-span-1 px-[2.125rem] lg:px-[0.625rem]">
                 <input
                     class="text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold] bg-white rounded-[20px] border-black border-[0.3125rem] text-center mt-[1.8125rem] lg:mt-[3.125rem] min-h-[4.8125rem] lg:min-h-[6.25rem] w-full "
-                    type="text" placeholder="Noun">
+                    type="text" placeholder="Noun" id="nounInput">
             </div>
         </div>
 
 
         <div class="flex justify-center">
-            <button type="submit" value="0"
+            <button type="submit" value="0" id="submit"
                 class=" bg-[#00FF75] rounded-[20px] border-black border-[0.3125rem] text-center w-[17.1875rem] min-h-[4.75rem] lg:w-[28.4375rem] lg:min-h-[6.25rem] mt-[1.25rem] lg:mt-[1.9375rem] lg:mb-[3.125rem]">
                 <p class="text-black text-[1.875rem] lg:text-[2.5rem] font-[Rubik-Bold]">Submit</p>
             </button>
@@ -119,6 +119,9 @@
 
 
     </div>
+
+
+    <script src="../scripts/madlib.js"></script>
 </body>
 
 </html>
