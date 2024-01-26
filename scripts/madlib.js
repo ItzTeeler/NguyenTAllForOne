@@ -16,8 +16,19 @@ submit.addEventListener("click", () => {
         returnOutput.innerText = "Please Enter Something";
     }else{
         MabLibApi(genderInput.value, nameInput.value, ageInput.value, colorInput.value, pronounInput.value, foodInput.value, jobInput.value, adjective1Input.value, adjective2Input.value, nounInput.value);
-
+        genderInput.value = "";
+        nameInput.value = "";
+        ageInput.value = "";
+        colorInput.value = "";
+        pronounInput.value = "";
+        foodInput.value = "";
+        jobInput.value = "";
+        adjective1Input.value = "";
+        adjective2Input.value = "";
+        nounInput.value = "";
     }
+
+
 })
 
 

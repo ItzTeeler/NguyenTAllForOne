@@ -7,6 +7,7 @@ submit.addEventListener("click", () => {
         returnOutput.innerText = "Please Enter Something";
     }else{
         ReverseItNumbersApi(stringInput.value); 
+        stringInput.value = "";
     }
 
 })

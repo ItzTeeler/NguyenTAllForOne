@@ -8,6 +8,8 @@ submit.addEventListener("click", () => {
         returnOutput.innerText = "Please Enter Something";
     }else{
         GreaterThanLessThanApi(num1.value, num2.value);
+        num1.value = "";
+        num2.value = "";
     }
 })
 

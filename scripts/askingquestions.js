@@ -8,6 +8,8 @@ submit.addEventListener("click", () => {
         returnOutput.innerText = "Please Enter Something";
     }else{
         AskingQuestionsApi(nameInput.value, timeInput.value);
+        nameInput.value = "";
+        timeInput.value = "";
     }
 })
 
