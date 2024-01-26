@@ -5,6 +5,9 @@ let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
     if(stringInput.value === ""){
         returnOutput.innerText = "Please Enter Something";
+    }else if(stringInput.value.toLowerCase() === "something"){
+        returnOutput.innerText = "Don't actually put something... idiot";
+        stringInput.value = "";
     }else{
         ReverseItNumbersApi(stringInput.value); 
         stringInput.value = "";

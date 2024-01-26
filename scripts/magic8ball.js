@@ -5,6 +5,9 @@ let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
     if(askInput.value === ""){
         returnOutput.innerText = "Please Enter Something";
+    }else if(askInput.value.toLowerCase() === "something"){
+        returnOutput.innerText = "Don't actually put something... idiot";
+        askInput.value = "";
     }else{
         Magic8BallApi();
         askInput.value = "";

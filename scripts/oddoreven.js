@@ -5,6 +5,9 @@ let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
     if(numberInput.value === ""){
         returnOutput.innerText = "Please Enter Something";
+    }else if(numberInput.value.toLowerCase() === "something"){
+        returnOutput.innerText = "Don't actually put something... idiot";
+        numberInput.value = "";
     }else{
         OddOrEvenApi(numberInput.value);
         numberInput.value = "";

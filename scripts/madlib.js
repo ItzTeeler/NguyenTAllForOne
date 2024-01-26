@@ -14,6 +14,18 @@ let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
     if(genderInput.value === "" || nameInput.value === "" || ageInput.value === "" || colorInput.value === "" || pronounInput.value === "" || foodInput.value === "" || jobInput.value === "" || adjective1Input.value === "" || adjective2Input.value === "" || nounInput.value === ""){
         returnOutput.innerText = "Please Enter Something";
+    }else if(genderInput.value.toLowerCase() === "something" || nameInput.value.toLowerCase() === "something" || ageInput.value.toLowerCase() === "something" || colorInput.value.toLowerCase() === "something" || pronounInput.value.toLowerCase() === "something" || foodInput.value.toLowerCase() === "something" || jobInput.value.toLowerCase() === "something" || adjective1Input.value.toLowerCase() === "something" || adjective2Input.value.toLowerCase() === "something" || nounInput.value.toLowerCase() === "something"){
+        returnOutput.innerText = "Don't actually put something... idiot";
+        genderInput.value = "";
+        nameInput.value = "";
+        ageInput.value = "";
+        colorInput.value = "";
+        pronounInput.value = "";
+        foodInput.value = "";
+        jobInput.value = "";
+        adjective1Input.value = "";
+        adjective2Input.value = "";
+        nounInput.value = "";
     }else{
         MabLibApi(genderInput.value, nameInput.value, ageInput.value, colorInput.value, pronounInput.value, foodInput.value, jobInput.value, adjective1Input.value, adjective2Input.value, nounInput.value);
         genderInput.value = "";

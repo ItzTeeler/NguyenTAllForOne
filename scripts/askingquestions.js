@@ -6,6 +6,10 @@ let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
     if(nameInput.value === "" || timeInput.value === ""){
         returnOutput.innerText = "Please Enter Something";
+    }else if(nameInput.value.toLowerCase() === "something" || timeInput.value.toLowerCase() === "something"){
+        returnOutput.innerText = "Don't actually put something... idiot";
+        nameInput.value = "";
+        timeInput.value = "";
     }else{
         AskingQuestionsApi(nameInput.value, timeInput.value);
         nameInput.value = "";

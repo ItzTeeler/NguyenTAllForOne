@@ -6,6 +6,10 @@ let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
     if(num1.value === "" || num2.value === ""){
         returnOutput.innerText = "Please Enter Something";
+    }else if(num1.value.toLowerCase() === "something" || num2.value.toLowerCase() === "something"){
+        returnOutput.innerText = "Don't actually put something... idiot";
+        num1.value = "";
+        num2.value = "";
     }else{
         GreaterThanLessThanApi(num1.value, num2.value);
         num1.value = "";
