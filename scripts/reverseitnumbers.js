@@ -3,7 +3,12 @@ let numberInput = document.getElementById("numberInput");
 let submit = document.getElementById("submit");
 
 submit.addEventListener("click", () => {
-    ReverseItNumbersApi(numberInput.value);
+    if(numberInput.value === ""){
+        returnOutput.innerText = "Please Enter Something";
+    }else{
+        ReverseItNumbersApi(numberInput.value); 
+    }
+    
 })
 
 

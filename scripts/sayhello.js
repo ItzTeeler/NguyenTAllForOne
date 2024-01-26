@@ -3,7 +3,12 @@ let nameInput = document.getElementById("nameInput");
 let submit = document.getElementById("submit");
 
 submit.addEventListener("click", () => {
-    ReverseItStringApi(nameInput.value);
+    if(nameInput.value === ""){
+        returnOutput.innerText = "Please Enter Something";
+    }else{
+      ReverseItStringApi(nameInput.value);  
+    }
+    
 })
 
 

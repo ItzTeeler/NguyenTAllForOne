@@ -4,7 +4,11 @@ let num2 = document.getElementById("num2");
 let submit = document.getElementById("submit");
 
 submit.addEventListener("click", () => {
-    GreaterThanLessThanApi(num1.value, num2.value);
+    if(num1.value === "" || num2.value === ""){
+        returnOutput.innerText = "Please Enter Something";
+    }else{
+        GreaterThanLessThanApi(num1.value, num2.value);
+    }
 })
 
 

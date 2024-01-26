@@ -3,7 +3,11 @@ let numberInput = document.getElementById("numberInput");
 let submit = document.getElementById("submit");
 
 submit.addEventListener("click", () => {
-    OddOrEvenApi(numberInput.value);
+    if(numberInput.value === ""){
+        returnOutput.innerText = "Please Enter Something";
+    }else{
+        OddOrEvenApi(numberInput.value);
+    }
 })
 
 

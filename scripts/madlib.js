@@ -12,7 +12,12 @@ let nounInput = document.getElementById("nounInput");
 let submit = document.getElementById("submit");
 
 submit.addEventListener("click", () => {
-    MabLibApi(genderInput.value, nameInput.value, ageInput.value, colorInput.value, pronounInput.value, foodInput.value, jobInput.value, adjective1Input.value, adjective2Input.value, nounInput.value);
+    if(genderInput.value === "" || nameInput.value === "" || ageInput.value === "" || colorInput.value === "" || pronounInput.value === "" || foodInput.value === "" || jobInput.value === "" || adjective1Input.value === "" || adjective2Input.value === "" || nounInput.value === ""){
+        returnOutput.innerText = "Please Enter Something";
+    }else{
+        MabLibApi(genderInput.value, nameInput.value, ageInput.value, colorInput.value, pronounInput.value, foodInput.value, jobInput.value, adjective1Input.value, adjective2Input.value, nounInput.value);
+
+    }
 })
 
 

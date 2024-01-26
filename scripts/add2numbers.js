@@ -4,7 +4,12 @@ let submit = document.getElementById("submit");
 let returnOutput = document.getElementById("returnOutput");
 
 submit.addEventListener("click", () =>{
-    AddNumApi(num1.value, num2.value);
+    if(num1.value === "" || num2.value === ""){
+        returnOutput.innerText = "Please Enter Something";
+    }else{
+        AddNumApi(num1.value, num2.value);
+    }
+    
 });
 
 

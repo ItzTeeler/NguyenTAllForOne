@@ -4,7 +4,11 @@ let timeInput = document.getElementById("timeInput");
 let submit = document.getElementById("submit");
 
 submit.addEventListener("click", () => {
-    AskingQuestionsApi(nameInput.value, timeInput.value);
+    if(nameInput.value === "" || timeInput.value === ""){
+        returnOutput.innerText = "Please Enter Something";
+    }else{
+        AskingQuestionsApi(nameInput.value, timeInput.value);
+    }
 })
 
 

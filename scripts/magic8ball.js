@@ -3,7 +3,12 @@ let askInput = document.getElementById("askInput");
 let submit = document.getElementById("submit");
 
 submit.addEventListener("click", () => {
-    Magic8BallApi();
+    if(numberInput.value === ""){
+        returnOutput.innerText = "Please Enter Something";
+    }else{
+        Magic8BallApi();
+    }
+    
 })
 
 

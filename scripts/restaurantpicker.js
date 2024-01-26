@@ -3,7 +3,11 @@ let numberInput = document.getElementById("numberInput");
 let submit = document.getElementById("submit");
 
 submit.addEventListener("click", () => {
-    RestaurantPickerApi(numberInput.value);
+    if(stringInput.value === ""){
+        returnOutput.innerText = "Please Enter Something";
+    }else{
+        RestaurantPickerApi(stringInput.value);
+    }
 })
 
 
