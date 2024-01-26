@@ -28,5 +28,5 @@ To Access each endpoint the file paths are
 /ReverseItNumbersOnly/ReverseItNumbersOnly/{number1}
 /controller/SayHell/{name}
 
-Peer Reviewer -
-Peer Review -
+Peer Reviewer - Jared Ly
+Peer Review - The code works great and everything runs as intended, although I feel that the mobile buttons are a bit big and on the madlib you have to scroll down quite far. But the backgrounds and fonts make the site very appealing to look at nice job!
